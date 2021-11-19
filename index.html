@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<title>Fred's Daily Journal</title>
+	</head>
+	<body>
+		<header>
+			<!-- logo image will go here when i get one -->
+			<img src="" alt="" />
+			<h1>Fred Schmidt</h1>
+		</header>
+		<main class="container">
+			<article class="formContainer">
+				<h2>Daily Journal</h2>
+				<form class="entryForm">
+					<!-- put in date -->
+					<fieldset>
+						<label for="entryDate">Date</label>
+						<input
+							type="date"
+							name="entryDate"
+							class="entryForm_date"
+						/>
+					</fieldset>
+					<!-- put in concepts covered -->
+					<fieldset>
+						<label for="entryConcepts">Concepts Covered</label>
+						<input
+							type="text"
+							name="entryConcepts"
+							class="entryForm_concepts"
+						/>
+					</fieldset>
+					<!-- put in journal entry -->
+					<fieldset>
+						<label for="entryJournal">Journal Entry</label>
+						<textarea
+							id="entryJournal"
+							name="entryJournal"
+							class="entryForm_journal"
+						></textarea>
+					</fieldset>
+					<!-- put in mood -->
+					<fieldset>
+						<label for="entryMood">Mood</label>
+						<select
+							id="entryMood"
+							name="entryMood"
+							class="entryForm_mood"
+						>
+							<option value="happy">Happy</option>
+							<option value="sad">Sad</option>
+							<option value="upset">Upset</option>
+							<option value="ecstatic">Ecstatic</option>
+						</select>
+					</fieldset>
+					<!-- Save journal button -->
+					<input type="submit" value="Save Entry" id="entryForm_save" />
+				</form>
+			</article>
+			<arcticle id="entries" class="entryListContainer">
+				<ul class="entryList"></ul>
+			</arcticle>
+		</main>
+		<footer>
+			<div class="footerEl">Fred Schmidt</div>
+			<div class="footerEl">GitHubLinkGoHere</div>
+			<div class="footerEl">CopyrightStuff</div>
+		</footer>
+	</body>
 </html>

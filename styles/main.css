@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.formContainer {
+    display: flex;
+    flex-flow:  column wrap;
+}
+
+.entryForm {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.entryForm_date, .entryForm_concepts, .entryForm_journal, .entryForm_mood {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#entryForm_save {
+    max-width: 10%;
+    min-width: 100px;
+}
