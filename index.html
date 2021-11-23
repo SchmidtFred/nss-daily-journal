@@ -14,63 +14,13 @@
 			<h1>Fred Schmidt</h1>
 		</header>
 		<main class="container">
-			<article class="formContainer">
-				<h2>Daily Journal</h2>
-				<form class="entryForm">
-					<!-- put in date -->
-					<fieldset>
-						<label for="entryDate">Date</label>
-						<input
-							type="date"
-							name="entryDate"
-							class="entryForm_date"
-						/>
-					</fieldset>
-					<!-- put in concepts covered -->
-					<fieldset>
-						<label for="entryConcepts">Concepts Covered</label>
-						<input
-							type="text"
-							name="entryConcepts"
-							class="entryForm_concepts"
-						/>
-					</fieldset>
-					<!-- put in journal entry -->
-					<fieldset>
-						<label for="entryJournal">Journal Entry</label>
-						<textarea
-							id="entryJournal"
-							name="entryJournal"
-							class="entryForm_journal"
-						></textarea>
-					</fieldset>
-					<!-- put in mood -->
-					<fieldset>
-						<label for="entryMood">Mood</label>
-						<select
-							id="entryMood"
-							name="entryMood"
-							class="entryForm_mood"
-						>
-							<option value="Happy">Happy</option>
-							<option value="Sad">Sad</option>
-							<option value="Upset">Upset</option>
-							<option value="Ecstatic">Ecstatic</option>
-                            <option value="Ok">Ok</option>
-						</select>
-					</fieldset>
-					<!-- Save journal button -->
-					<input type="submit" value="Save Entry" id="entryForm_save" />
-				</form>
-			</article>
-			<arcticle id="entries" class="entryListContainer">
-			</arcticle>
+			<arcticle id="entries" class="entryListContainer"> </arcticle>
 		</main>
 		<footer>
 			<div class="footerEl">Fred Schmidt</div>
 			<div class="footerEl">GitHubLinkGoHere</div>
 			<div class="footerEl">CopyrightStuff</div>
 		</footer>
-        <script type="module" src="./scripts/main.js"></script>
+		<script type="module" src="./scripts/main.js"></script>
 	</body>
 </html>
