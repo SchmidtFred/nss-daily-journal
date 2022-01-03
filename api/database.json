@@ -1,32 +1,54 @@
 {
-    "entries" : [
-        {
-			"id": 1,
-			"date": "07/24/2025",
-			"concept": "HTML & CSS",
-			"entry": "We talked about HTMl components and how to make grid layouts with Flexbox in CSS.",
-			"mood": "Ok"
-		},
-		{
-			"id": 2,
-			"date": "07/26/2025",
-			"concept": "Complex Flexbox",
-			"entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-			"mood": "Sad"
-		},
-		{
-			"id": 3,
-			"date": "07/28/2025",
-			"concept": "Data Types",
-			"entry": "We talked about the different data types in Javascript and how to utilize/manipulate them.",
-			"mood": "Happy"
-		},
-		{
-			"id": 4,
-			"date": "07/30/2025",
-			"concept": "Functions",
-			"entry": "Learned how to create and use functions inside of Javascript.",
-			"mood": "Upset"
-		}
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTMl components and how to make grid layouts with Flexbox in CSS.",
+      "moodId": 5
+    },
+    {
+      "id": 2,
+      "date": "07/26/2025",
+      "concept": "Complex Flexbox",
+      "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+      "moodId": 2
+    },
+    {
+      "id": 3,
+      "date": "07/28/2025",
+      "concept": "Data Types",
+      "entry": "We talked about the different data types in Javascript and how to utilize/manipulate them.",
+      "moodId": 1
+    },
+    {
+      "id": 4,
+      "date": "07/30/2025",
+      "concept": "Functions",
+      "entry": "Learned how to create and use functions inside of Javascript.",
+      "moodId": 3
+    }
+  ],
+  "moods" : [
+	  {
+		  "id": 1,
+		  "label" : "Happy"
+	  },
+	  {
+		  "id": 2,
+		  "label" : "Sad"
+	  },
+	  {
+		  "id": 3,
+		  "label": "Upset"
+	  },
+	  {
+		  "id": 4,
+		  "label": "Ecstatic"
+	  },
+	  {
+		  "id": 5,
+		  "label": "Ok"
+	  }
+  ]
 }

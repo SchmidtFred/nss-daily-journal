@@ -1,4 +1,8 @@
+import { saveJournalEntry, getMoods } from "./databaseAccess.js";
+
 export const createEntryForm = () => {
+	const moods = getMoods();
+
 	return `
                 <form class="entryForm">
 					<!-- put in date -->
@@ -36,11 +40,9 @@ export const createEntryForm = () => {
 							name="entryMood"
 							class="entryForm_mood"
 						>
-							<option value="Happy">Happy</option>
-							<option value="Sad">Sad</option>
-							<option value="Upset">Upset</option>
-							<option value="Ecstatic">Ecstatic</option>
-                            <option value="Ok">Ok</option>
+							${moods.map(mood => {
+								return `<option value="${mood.id}">${mood.label}</option>`
+							}).join("")}
 						</select>
 					</fieldset>
 					<!-- Save journal button -->
@@ -48,3 +50,24 @@ export const createEntryForm = () => {
 				</form>
             `;
 };
+
+//event listeners
+
+//get container
+const container = document.querySelector(".container");
+
+//button click for save
+container.addEventListener("submit", submitEvent => {
+	submitEvent.preventDefault();
+	//get the select value
+	const moodSelect = document.querySelector(".entryForm_mood");
+
+	const newEntry = {
+		concept: document.querySelector(".entryForm_concepts").value,
+		entry: document.querySelector(".entryForm_journal").value,
+		moodId: parseInt(moodSelect.options[moodSelect.selectedIndex].value),
+		date: document.querySelector(".entryForm_date").value
+	}
+
+	saveJournalEntry(newEntry);
+})
